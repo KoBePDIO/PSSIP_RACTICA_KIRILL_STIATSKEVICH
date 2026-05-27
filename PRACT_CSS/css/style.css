@@ -1587,10 +1587,7 @@ margin-top: 30px;}
     }
 
     .user-actions {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 8px;
+        display: none;
     }
 
     .action-icon,
@@ -1615,13 +1612,7 @@ margin-top: 30px;}
     }
 
     .search-bar {
-        grid-column: 1 / -1;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-top: 10px;
-        gap: 10px;
-        border: none;
+       display: none;
     }
 
     .search-select,
