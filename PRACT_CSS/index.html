@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kugoo - Электросамокаты</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+ <script src="js/script.js"></script>
+    <header class="header">   <!-- Шапка сайта -->
+            <div class="header-top">   <!-- Верхняя строка: ссылки, соцсети, телефон -->
+                <div class="container top-container">
+                    <nav class="top-nav">
+                        <a href="#">Сервис</a>
+                        <a href="#">Сотрудничество</a>
+                        <a href="#">Заказать звонок</a> <div class="social-icons"></div>
+                        <a href="#">Viber</a>
+                        <a href="#">Wa</a>
+                        <a href="#">Tg</a>
+                    </nav>
+                        <a href="tel:+78005055461" class="phone">+7 (800) 505-54-61 <strong>+</strong></a>
+                    </div>
+                </div>
+          
+  
+
+        <div class="header-main">   <!-- Основная часть шапки: лого, каталог, поиск, корзина -->
+            <div class="container main-container">
+              <button class="burger-nav-btn" id="burgerNavBtn" onclick="toggleMobileMenu()">☰</button>
+                <a href="#" class="logo">KUGOO</a>
+                
+                <button class="btn-catalog">
+                    <span class="burger-icon">≡</span> Каталог
+                </button>
+
+                <div class="search-bar">
+                    <select class="search-select">
+                        <option>Везде</option>
+                    </select>
+                    <input type="text" placeholder="Искать самокат KUGOO">
+                    <button class="btn-search">🔍</button>
+                </div>
+
+                <div class="user-actions">
+                    <a href="#" class="action-icon" title="Сравнение">⚖️</a>
+                    <a href="#" class="action-icon" title="Избранное">♡</a>
+                    <a href="#" class="action-cart">
+                        <span class="cart-icon">🛒</span>
+                        <span>Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">   <!-- Нижнее меню шапки -->
+            <div class="container">
+                <nav class="bottom-nav">
+                    <a href="#">О магазине</a>
+                    <a href="#">Доставка и оплата <span class="badge badge-light">Доступна рассрочка</span></a>
+                    <a href="#">Тест-драйв</a>
+                    <a href="#">Блог</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Акции <span class="badge badge-round">%</span></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">   <!-- Секция главного баннера (hero) -->
+            <div class="container">
+                <div class="hero-banner">
+                    <div class="hero-text-block">
+                        <span class="badge badge-outline">Новинка</span>
+                        <h1>ЭЛЕКТРОСАМОКАТЫ KUGOO KIRIN<br>ОТ ОФИЦИАЛЬНОГО ДИЛЕРА</h1>
+                        <p>с бесплатной доставкой по РФ от 1 дня</p>
+                        <a href="#" class="btn-primary">Перейти в каталог</a>
+                        
+                        <div class="slider-controls">
+                            <button class="arrow-btn">&lt;</button>
+                            <span class="slider-dots">1 &mdash; 5</span>
+                            <button class="arrow-btn">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="hero-image-block">
+                    <img src="img/sam.png" alt="Kugoo Kirin" class="hero-scooter-img">
+                    <div class="popover">⚡ Тест-драйв и обучение <strong>БЕСПЛАТНО</strong></div>
+                </div>
+                </div>
+
+                <div class="hero-features">   <!-- Блок с преимуществами и отзывами -->
+                    <div class="feature-item">
+                        <strong><b>ГАРАНТИЯ 1 ГОД</b></strong>
+                        <span>на весь ассортимент</span>
+                    </div>
+                    <div class="feature-item">
+                        <strong><b>РАССРОЧКА</b></strong>
+                        <span>от 6 месяцев</span>
+                    </div>
+                    <div class="feature-item">
+                        <strong><b>ПОДАРКИ</b></strong>
+                        <span>и бонусы к покупкам</span>
+                    </div>
+                    <div class="yandex-reviews">
+                        <span class="yandex-logo">Я</span>
+                        <div class="reviews-text">
+                            <small><b>Яндекс отзывы</b></small>
+                            <strong>⭐ 4,9</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-section container">   <!-- Каталог / карточки товаров -->
+    <div class="catalog-grid">
+        <div class="product-card">
+            <div class="card-top">
+                <span class="card-badge badge-hit">ХИТ</span>
+                <button class="btn-compare" title="Сравнить">⚖️</button>
+            </div>
+            <div class="card-img-wrap">
+                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+            </div>
+            <h3 class="card-title">Kugoo Kirin M4</h3>
+            <div class="card-specs">
+                <div class="spec-item">🔋 2000 mAh</div>
+                <div class="spec-item">⚡ 1,2 л.с.</div>
+                <div class="spec-item">💨 60 км/ч</div>
+                <div class="spec-item">⏱️ 5 часов</div>
+            </div>
+            <div class="card-price-block">
+                <div class="price-old">39 900 ₽</div>
+                <div class="price-current">29 900 ₽</div>
+                <div class="card-actions">
+                    <button class="btn-icon-cart">🛒</button>
+                    <button class="btn-icon-fav">♡</button>
+                </div>
+            </div>
+            <button class="btn-buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="product-card">
+            <div class="card-top">
+                <span class="card-badge badge-hit">ХИТ</span>
+                <button class="btn-compare" title="Сравнить">⚖️</button>
+            </div>
+            <div class="card-img-wrap">
+                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+            </div>
+            <h3 class="card-title">Kugoo Kirin M4</h3>
+            <div class="card-specs">
+                <div class="spec-item">🔋 2000 mAh</div>
+                <div class="spec-item">⚡ 1,2 л.с.</div>
+                <div class="spec-item">💨 60 км/ч</div>
+                <div class="spec-item">⏱️ 5 часов</div>
+            </div>
+            <div class="card-price-block">
+                <div class="price-old">39 900 ₽</div>
+                <div class="price-current">29 900 ₽</div>
+                <div class="card-actions">
+                    <button class="btn-icon-cart">🛒</button>
+                    <button class="btn-icon-fav">♡</button>
+                </div>
+            </div>
+            <button class="btn-buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="product-card">
+            <div class="card-top">
+                <span class="card-badge badge-hit">ХИТ</span>
+                <button class="btn-compare" title="Сравнить">⚖️</button>
+            </div>
+            <div class="card-img-wrap">
+                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+            </div>
+            <h3 class="card-title">Kugoo Kirin M4</h3>
+            <div class="card-specs">
+                <div class="spec-item">🔋 2000 mAh</div>
+                <div class="spec-item">⚡ 1,2 л.с.</div>
+                <div class="spec-item">💨 60 км/ч</div>
+                <div class="spec-item">⏱️ 5 часов</div>
+            </div>
+            <div class="card-price-block">
+                <div class="price-old">39 900 ₽</div>
+                <div class="price-current">29 900 ₽</div>
+                <div class="card-actions">
+                    <button class="btn-icon-cart">🛒</button>
+                    <button class="btn-icon-fav">♡</button>
+                </div>
+            </div>
+            <button class="btn-buy-click">Купить в 1 клик</button>
+        </div>
+        <div class="product-card">
+            <div class="card-top">
+                <span class="card-badge badge-hit">ХИТ</span>
+                <button class="btn-compare" title="Сравнить">⚖️</button>
+            </div>
+            <div class="card-img-wrap">
+                <img src="img/card.jpg" alt="Kugoo Kirin M4" class="card-img">
+            </div>
+            <h3 class="card-title">Kugoo Kirin M4</h3>
+            <div class="card-specs">
+                <div class="spec-item">🔋 2000 mAh</div>
+                <div class="spec-item">⚡ 1,2 л.с.</div>
+                <div class="spec-item">💨 60 км/ч</div>
+                <div class="spec-item">⏱️ 5 часов</div>
+            </div>
+            <div class="card-price-block">
+                <div class="price-old">39 900 ₽</div>
+                <div class="price-current">29 900 ₽</div>
+                <div class="card-actions">
+                    <button class="btn-icon-cart">🛒</button>
+                    <button class="btn-icon-fav">♡</button>
+                </div>
+            </div>
+            <button class="btn-buy-click">Купить в 1 клик</button>
+        </div>
+    </div>
+    <div class="center-btn-wrap">
+        <button class="btn-outline-main">Смотреть все</button>
+    </div>
+</section>
+<section class="promo-banners container">   <!-- Баннеры "Подбор модели" и "Сервисное обслуживание" -->
+    <div class="banner-card banner-light banner-half">
+        <div class="banner-content">
+            <h2>ПОДБОР МОДЕЛИ ЭЛЕКТРОСАМОКАТА</h2>
+            <p>Пройдите тест и выберите электросамокат по своим критериям</p>
+            <a href="#" class="link-arrow">Подобрать модель →</a>
+        </div>
+        <img src="img/wheel.png" alt="Самокат" class="banner-img">
+    </div>
+
+    <div class="banner-card banner-purple banner-half">
+        <div class="banner-content">
+            <h2>СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h2>
+            <p>Крупнейший сервисный центр в России для продуктов Kugoo</p>
+            <a href="#" class="link-arrow">Подобрать модель →</a>
+        </div>
+        <img src="img/woman.png" alt="Сервисное обслуживание" class="banner-img">
+    </div>
+    
+</section>
+<section class="wide-promo-section container">   <!-- Широкий баннер акции с дроном -->
+    <div class="wide-banner">
+        <img src="img/dron.png" alt="Квадрокоптер" class="wide-banner-img">
+        <div class="wide-banner-text">
+            <span class="badge-red">Акция</span>
+            <h2>БЕСПЛАТНАЯ ДОСТАВКА ЭЛЕКТРОСАМОКАТОВ ПО РОССИИ ДО 01.09</h2>
+            <button class="btn-white">Подробнее</button>
+        </div>
+    </div>
+</section>
+<section class="categories-section container">   <!-- Блок популярных категорий с менеджером -->
+    <div class="section-header">
+        <h2>ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
+        <div class="manager-widget">
+            <img src="img/manager.png" alt="Менеджер" class="manager-avatar">
+            <p>Менеджер ответит на любой ваш вопрос о продуктах Kugoo<br>
+               <a href="#" class="link-arrow">Задать вопрос</a>
+            </p>
+        </div>
+    </div>
+
+   
+
+    <div class="categories-grid">
+        <div class="category-card" style="background-image: url('img/1cat.jpg');">
+            <div class="category-content">
+                <h3>Роботы-пылесосы</h3>
+                <p>от 29 900 ₽</p>
+            </div>
+        </div>
+        <div class="category-card" style="background-image: url('img/2cat.jpg');">
+            <div class="category-content">
+                <h3>Весы</h3>
+                <p>от 29 900 ₽</p>
+            </div>
+        </div>
+        <div class="category-card" style="background-image: url('img/3cat.jpg');">
+            <div class="category-content">
+                <h3>Электросамокаты</h3>
+                <p>от 29 900 ₽</p>
+            </div>
+        </div>
+        <div class="category-card" style="background-image: url('img/1cat.jpg');">
+            <div class="category-content">
+                <h3>Роботы-пылесосы</h3>
+                <p>от 29 900 ₽</p>
+            </div>
+        </div>
+        
+        </div>
+        
+</section>
+ <section>   <!-- Кнопка "Смотреть все" под категориями -->
+     <div class="center-btn-wrap">
+        <button class="btn-outline-main">Смотреть все</button>
+    </div>
+ </section>
+    <section class="about-dealer container">   <!-- Блок "Официальный дилер" с тест-драйвом -->
+        
+    <div class="dealer-inner">
+        <div class="dealer-image">
+            <img src="img/deal.jpg" alt="Kugoo Official Dealer">
+            <div class="dealer-test-drive">
+                <h3>Тест-драйв в Москве</h3>
+                <p>Оцените все преимущества самокатов лично</p>
+                <a href="#" class="btn-arrow">Подробнее →</a>
+            </div>
+        </div>
+
+        <div class="dealer-content">
+            <h2>KUGOO-RUSSIA — ПЕРВЫЙ ОФИЦИАЛЬНЫЙ ДИЛЕР KUGOO KIRIN В РОССИИ</h2>
+            <p>Наша цель предоставить полный ассортимент современной продукции Kugoo Kirin, которая улучшает и упрощает жизнь. Стремимся подарить комфорт и эмоции, поэтому помогаем с выбором и внимательно относимся к сервисному обслуживанию.</p>
+            
+            <div class="dealer-features">
+                <h3>Специализируемся исключительно на бренде Kugoo, поэтому вы получите:</h3>
+                <ul>
+                    <li>цены от завода-изготовителя Jilong;</li>
+                    <li>бесплатный тест-драйв самокатов;</li>
+                    <li>фирменную гарантию 1 год;</li>
+                    <li>ремонт и обслуживание от 1 дня в собственном сервисном центре;</li>
+                    <li>более 1 000 запчастей и аксессуаров в наличии.</li>
+                </ul>
+                <a href="#" class="link-arrow">Смотреть сертификат</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages-section container">   <!-- Преимущества (6 карточек) -->
+    <h2 class="section-title">ПРЕДЛАГАЕМ САМЫЕ ВЫГОДНЫЕ ЦЕНЫ НА ПРОДУКТЫ KUGOO ЗА СЧЕТ ПРЯМЫХ ПОСТАВОК</h2>
+    <p class="section-subtitle">и заботимся об удобстве покупателей</p>
+
+    <div class="tabs">
+        <button class="tab-btn active">Интернет-магазин</button>
+        <button class="tab-btn">Сервисный центр</button>
+    </div>
+
+    <div class="advantages-grid">
+        <div class="adv-card">
+            <div class="icon">🛒</div>
+            <h3>X товаров в каталоге</h3>
+            <p>Выбирайте товар, который подходит по цене и характеристикам...</p>
+        </div>
+        
+        <div class="adv-card">
+            <div class="icon">💳</div>
+            <h3>5 способов оплаты</h3>
+            <p>Вы можете оплатить покупку наличными, картой, онлайн на сайте...</p>
+        </div>
+
+        <div class="adv-card">
+            <div class="icon">✅</div>
+            <h3>Полная документация и гарантия 1 год</h3>
+            <p>При покупке вам выдается кассовый чек, товарный чек и гарантийный талон...</p>
+        </div>
+
+        <div class="adv-card">
+            <div class="icon">🚚</div>
+            <h3>Отправка заказа день в день</h3>
+            <p>Отправляем заказы по всей России день в день или забирайте...</p>
+        </div>
+
+        <div class="adv-card">
+            <div class="icon">%</div>
+            <h3>Рассрочка без переплат</h3>
+            <p>В нашем магазине можно приобрести любой товар в рассрочку...</p>
+        </div>
+
+        <div class="adv-card highlight">
+            <img src="img/steer.png" alt="" class="wide-categ-img">
+            <h3>Больше в каталоге</h3>
+            <a href="#" class="link-arrow">Перейти →</a>
+        </div>
+    </div>
+    <section class="reviews-section container">   <!-- Отзывы + галерея фотографий -->
+    <div class="video-preview">
+        <img src="img/cover.jpg" alt="Видеоотзыв">
+         <button class="play-btn-circle">
+                    ▶
+                </button>
+    </div>
+
+    <div class="section-header">
+        <h2>ОТЗЫВЫ И ФОТО РЕАЛЬНЫХ ПОКУПАТЕЛЕЙ</h2>
+        <a href="#" class="link-arrow">Читать отзывы на Яндекс →</a>
+    </div>
+
+   <section class="photos-gallery container">
+    <div class="gallery-grid">
+        <img src="img/phot1.jpg" alt="Фото покупателя">
+        <img src="img/phot2.jpg" alt="Фото покупателя">
+        <img src="img/phot3.jpg" alt="Фото покупателя">
+        <img src="img/phot4.jpg" alt="Фото покупателя">
+        <img src="img/phot5.jpg" alt="Фото покупателя">
+        <img src="img/phot1.jpg" alt="Фото покупателя">
+    </div>
+</section>
+</section>
+</section>
+<section class="video-reviews container">   <!-- Видеообзоры с YouTube -->
+    <div class="video-header">
+        <div class="header-left">
+            <h2>ВИДЕООБЗОРЫ</h2>
+            <p>Узнайте больше о самокатах Kugoo и посмотрите сравнительные обзоры разных моделей на нашем YouTube-канале.</p>
+        </div>
+        <a href="#" class="link-all">Смотреть все видеообзоры <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="video-grid">
+        <div class="video-item featured">
+            <div class="video-thumb">
+                <img src="img/vcov1.jpg" alt="Обзор Kugoo X5 Plus">
+                <button class="play-btn-circle">
+                    ▶
+                </button>
+            </div>
+            <h3>Крутой и городской? Обзор Kugoo X5 Plus</h3>
+        </div>
+
+        <div class="video-item">
+            <div class="video-thumb">
+                <img src="img/vcov2.jpg" alt="Обзор Kugoo X5 Plus">
+                <button class="play-btn-circle">
+                    ▶
+                </button>
+            </div>
+            <h3>Крутой и городской? Обзор Kugoo X5 Plus</h3>
+        </div>
+
+        <div class="video-item">
+            <div class="video-thumb">
+                <img src="img/vcov3.jpg " alt="Обзор Kugoo X5 Plus">
+                <button class="play-btn-circle">
+                   ▶
+                </button>
+            </div>
+            <h3>Крутой и городской? Обзор Kugoo X5 Plus</h3>
+        </div>
+    </div>
+</section>
+<section class="blog-section container">   <!-- Блог: новые статьи -->
+    <div class="section-header">
+        <h2>НОВЫЕ СТАТЬИ В БЛОГЕ</h2>
+    </div>
+
+    <div class="blog-grid">
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="img/state.jpg" alt="Статья">
+            </div>
+            <div class="blog-content">
+                <h3>Как правильно заряжать электросамокат</h3>
+                <p>Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                <div class="blog-meta">
+                    <span>📅 01.09.2021</span>
+                    <span>👁 53</span>
+                </div>
+            </div>
+        </div>
+            <div class="blog-card">
+            <div class="blog-image">
+                <img src="img/state.jpg" alt="Статья">
+            </div>
+            <div class="blog-content">
+                <h3>Как правильно заряжать электросамокат</h3>
+                <p>Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                <div class="blog-meta">
+                    <span>📅 01.09.2021</span>
+                    <span>👁 53</span>
+                </div>
+            </div>
+        </div>
+            <div class="blog-card">
+            <div class="blog-image">
+                <img src="img/state.jpg" alt="Статья">
+            </div>
+            <div class="blog-content">
+                <h3>Как правильно заряжать электросамокат</h3>
+                <p>Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                <div class="blog-meta">
+                    <span>📅 01.09.2021</span>
+                    <span>👁 53</span>
+                </div>
+            </div>
+        </div>
+            <div class="blog-card">
+            <div class="blog-image">
+                <img src="img/state.jpg" alt="Статья">
+            </div>
+            <div class="blog-content">
+                <h3>Как правильно заряжать электросамокат</h3>
+                <p>Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                <div class="blog-meta">
+                    <span>📅 01.09.2021</span>
+                    <span>👁 53</span>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+    <button class="nav-btn-next">➜</button>
+</section>
+<section class="faq-section container">   <!-- Часто задаваемые вопросы (FAQ) -->
+    <h2 class="section-title">ОТВЕЧАЕМ НА ВОПРОСЫ ПОКУПАТЕЛЕЙ</h2>
+
+    <div class="faq-list">
+        <details class="faq-item">
+            <summary>
+                Есть ли гарантия того, что придет именно то, что было заказано? А если я оплачу и товар не придет?
+                <span class="icon">+</span>
+            </summary>
+            <div class="faq-content">
+                <p>Текст ответа на данный вопрос...</p>
+            </div>
+        </details>
+
+        <details class="faq-item" open>
+            <summary>
+                Как осуществляется сервисное обслуживание в моем городе? Где гарантия, что меня обслужат?
+                <span class="icon">×</span>
+            </summary>
+            <div class="faq-content">
+                <p>При покупке электросамоката у нас, вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание на законодательном уровне.</p>
+                <p>Наши сервисные центры находятся в Москве, Санкт-Петербурге и Краснодаре. В случае поломки вы можете обратиться туда.</p>
+                </div>
+        </details>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">   <!-- Подвал -->
+        <div class="footer-subscribe">   <!-- Блок подписки на новости -->
+            <div class="container subscribe-container">
+                <div class="subscribe-text">ОСТАВЬТЕ СВОЮ ПОЧТУ И СТАНЬТЕ ПЕРВЫМ,<br>КТО ПОЛУЧИТ СКИДКУ НА НОВЫЕ САМОКАТЫ</div>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Введите Ваш email">
+                    <button type="submit" class="btn-white">Подписаться</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-main">   <!-- Основное меню футера -->
+            <div class="container footer-grid">
+                <div class="footer-column">
+                    <h4>Каталог товаров</h4>
+                    <ul>
+                        <li><a href="#">Электросамокаты</a></li>
+                        <li><a href="#">Электроскутеры</a></li>
+                        <li><a href="#">Электровелосипеды</a></li>
+                        <li><a href="#">Электровелосипеды</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Покупателям</h4>
+                    <ul>
+                        <li><a href="#">Сервисный центр</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Рассрочка</a></li>
+                        <li><a href="#">Тест-драйв</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column contacts-column">
+                    <h4>Контакты <a href="#" class="link-call">Заказать звонок</a></h4>
+                    <div class="contact-row">
+                        <div class="contact-block">
+                            <small>Call-центр</small>
+                            <strong>+7 (800) 505-54-61</strong>
+                            <small>Пн-Вс 10:00 - 20:00</small>
+                        </div>
+                        <div class="contact-block">
+                            <small>Сервисный центр</small>
+                            <strong>+7 (499) 350-76-92</strong>
+                            <small>Пн-Вс 10:00 - 20:00</small>
+                        </div>
+                    </div>
+                    <div class="stores-row">
+                        <div class="store-block">
+                            <small>Магазин в Москве</small>
+                            <p>ул. Ткацкая, 5 стр. 16</p>
+                        </div>
+                        <div class="store-block">
+                            <small>Магазин в Санкт-Петербурге</small>
+                            <p>ул. Фрунзе, 2</p>
+                        </div>
+                        <div class="store-block">
+                            <small>Магазин в Краснодаре</small>
+                            <p>ул. Восточно-Кругликовская, 86</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">   <!-- Нижняя часть футера: приложения, соцсети, юр. инфо -->
+            <div class="container">
+                <div class="bottom-apps-socials">
+                    <a href="#" class="logo-footer">KUGOO</a>
+                    <div class="app-links">
+                        <a href="#" class="app-btn">Google Play</a>
+                        <a href="#" class="app-btn">App Store</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-btn">Вконтакте</a>
+                        <a href="#" class="social-btn">Instagram</a>
+                        <a href="#" class="social-btn">YouTube</a>
+                        <a href="#" class="social-btn">Telegram</a>
+                    </div>
+                </div>
+                
+                <hr class="footer-divider">
+                
+                <div class="bottom-legal">
+                    <div class="legal-links">
+                        <a href="#">Реквизиты</a>
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="payment-systems">
+                        <span>GPay / ApplePay / Visa / Mastercard</span>
+                    </div>
+                    <div class="online-chat">
+                        <span>Online чат:</span>
+                        <a href="#">Viber</a>
+                        <a href="#">Wa</a>
+                        <a href="#">Tg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+    <!-- Оверлей -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<!-- Боковое меню -->
+<div class="mobile-nav-menu" id="mobileNavMenu">
+    <div class="mobile-menu-header">
+        <span class="logo">KUGOO</span>
+        <button class="close-mobile-menu" id="closeNavMenuBtn">✕</button>
+    </div>
+    <div class="mobile-nav-list">
+        <a href="#">О магазине</a>
+        <a href="#">Доставка и оплата </a>
+        <a href="#">Тест-драйв</a>
+        <a href="#">Блог</a>
+        <a href="#">Контакты</a>
+        <a href="#">Акции <span class="badge badge-round">%</span></a>
+        <a href="#">Сервис</a>
+        <a href="#">Сотрудничество</a>
+        <a href="#">Заказать звонок</a>
+    </div>
+    <div class="mobile-nav-contacts">
+        <a href="tel:+78005055461" class="phone">+7 (800) 505-54-61</a>
+        <div class="mobile-social-links">
+            <a href="#">Viber</a>
+            <a href="#">Wa</a>
+            <a href="#">Tg</a>
+            <a href="#">YouTube</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
